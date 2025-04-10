@@ -1,0 +1,124 @@
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111a28;
+    color: #444;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0 auto;
+    width: 70%;
+}
+
+header {
+    background-color:#1d293a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+/* 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #12f37f;
+} */
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #0bda73;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main ul li {
+    margin: 15px 0;
+}
+
+main ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(243, 243, 218);
+    background-color: #1d293a;
+    padding: 15px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main ul li a:hover {
+    background-color: #0ff184;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    background-color: #1d293a;
+    color: #0ae88b;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 70%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main h1 {
+        font-size: 28px;
+    }
+
+    main ul li a {
+        font-size: 20px;
+        padding: 12px 25px;
+    }
+}
+
