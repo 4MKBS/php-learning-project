@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient(135deg, #7f7fd5 0%, #86a8e7 50%, #91eac9 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255,255,255,0.96);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(52, 152, 219, 0.12);
+    padding: 2em 2.3em 2em 2.3em;
+    max-width: 420px;
+    width: 94%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1.3em;
+    color: #345678;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.converter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1em;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 0.55em;
+}
+
+input[type="text"] {
+    width: 100px;
+    padding: 0.5em 0.9em;
+    border: 1px solid #b2bec3;
+    border-radius: 7px;
+    font-size: 1em;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus {
+    border: 1.5px solid #86a8e7;
+    outline: none;
+}
+
+select {
+    padding: 0.5em 0.9em;
+    border-radius: 7px;
+    border: 1px solid #b2bec3;
+    font-size: 1em;
+    background: #f8f9fa;
+    transition: border 0.2s;
+}
+
+select:focus {
+    border: 1.5px solid #7f7fd5;
+    outline: none;
+}
+
+.to-text {
+    font-size: 1.1em;
+    color: #636e72;
+    margin: 0 0.3em;
+}
+
+button[type="submit"] {
+    background: linear-gradient(90deg, #6a85b6 0%, #bac8e0 100%);
+    color: #345678;
+    font-size: 1.14em;
+    font-weight: 500;
+    padding: 0.7em 1.2em;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.09);
+    transition: background 0.2s, transform 0.1s;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #bac8e0 0%, #6a85b6 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.result {
+    margin-top: 1.4em;
+    font-size: 1.16em;
+    background: linear-gradient(90deg, #7f7fd5 0%, #91eac9 100%);
+    color: #2d3436;
+    padding: 0.7em 1em;
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    box-shadow: 0 1px 4px rgba(52, 152, 219, 0.10);
+}
+
+.error {
+    margin-top: 1.4em;
+    padding: 0.7em 1em;
+    border-radius: 8px;
+    background: #fdecea;
+    color: #b71c1c;
+    font-size: 1.07em;
+    font-weight: 500;
+}
+
+.note {
+    margin-top: 1.8em;
+    color: #888;
+    font-size: 0.93em;
+}
