@@ -6,6 +6,8 @@
         <li><a href="projects/calculator/index.php">1. Simple Calculator</a></li>
         <li><a href="projects/temperature-converter/index.php">2. Temperature Converter</a></li>
         <li><a href="projects/currency-converter/index.php">3. Currency Converter</a></li>
+        <li><a href="projects/login_app/register.php">4. Login Register System</a></li>
+        <li><a href="projects/todo_app/index.php">5. TODO App</a></li>
         <!-- Add more project links here -->
     </ul>
 </main>
