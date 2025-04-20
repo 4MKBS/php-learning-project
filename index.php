@@ -9,6 +9,7 @@
         <li><a href="projects/login_app/register.php">4. Login Register System</a></li>
         <li><a href="projects/todo_app/index.php">5. TODO App</a></li>
         <li><a href="projects/contact-email-send/contact.php">6. Contact Form with Email Sending</a></li>
+        <li><a href="projects/blog_app/index.php">7. Simple Blog App</a></li>
         <!-- Add more project links here -->
     </ul>
 </main>
