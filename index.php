@@ -10,6 +10,7 @@
         <li><a href="projects/todo_app/index.php">5. TODO App</a></li>
         <li><a href="projects/contact-email-send/contact.php">6. Contact Form with Email Sending</a></li>
         <li><a href="projects/blog_app/index.php">7. Simple Blog App</a></li>
+        <li><a href="projects/guestbook_app/index.php">8. Guestbook App</a></li>
         <!-- Add more project links here -->
     </ul>
 </main>
