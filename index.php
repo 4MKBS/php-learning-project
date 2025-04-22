@@ -13,6 +13,7 @@
         <li><a href="projects/guestbook_app/index.php">8. Guestbook App</a></li>
         <li><a href="projects/bmi_calculator/index.php">9. BMI Calculator</a></li>
         <li><a href="projects/survey_system/index.php">10. survey system</a></li>
+        <li><a href="projects/random_quote/index.php">11. Random Quote</a></li>
         <!-- Add more project links here -->
     </ul>
 </main>
