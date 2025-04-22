@@ -16,6 +16,7 @@
         <li><a href="projects/random_quote/index.php">11. Random Quote</a></li>
         <li><a href="projects/age_calculator/index.php">12. Age Calculator</a></li>
         <li><a href="projects/digital_clock/index.php">13. Digital Clock</a></li>
+        <li><a href="projects/ip_address_finder/index.php">14. IP Address Finder</a></li>
         <!-- Add more project links here -->
     </ul>
 </main>
