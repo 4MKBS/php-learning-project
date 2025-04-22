@@ -14,6 +14,7 @@
         <li><a href="projects/bmi_calculator/index.php">9. BMI Calculator</a></li>
         <li><a href="projects/survey_system/index.php">10. survey system</a></li>
         <li><a href="projects/random_quote/index.php">11. Random Quote</a></li>
+        <li><a href="projects/age_calculator/index.php">12. Age Calculator</a></li>
         <!-- Add more project links here -->
     </ul>
 </main>
