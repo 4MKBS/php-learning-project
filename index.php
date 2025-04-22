@@ -11,6 +11,7 @@
         <li><a href="projects/contact-email-send/contact.php">6. Contact Form with Email Sending</a></li>
         <li><a href="projects/blog_app/index.php">7. Simple Blog App</a></li>
         <li><a href="projects/guestbook_app/index.php">8. Guestbook App</a></li>
+        <li><a href="projects/bmi_calculator/index.php">9. BMI Calculator</a></li>
         <!-- Add more project links here -->
     </ul>
 </main>
