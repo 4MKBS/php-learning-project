@@ -18,6 +18,7 @@
         <li><a href="projects/digital_clock/index.php">13. Digital Clock</a></li>
         <li><a href="projects/ip_address_finder/index.php">14. IP Address Finder</a></li>
         <li><a href="projects/url_shortener/index.php">15. URL Shortener</a></li>
+        <li><a href="projects/image_gallery/index.php">16. Image Gallery</a></li>
         <!-- Add more project links here -->
     </ul>
 </main>

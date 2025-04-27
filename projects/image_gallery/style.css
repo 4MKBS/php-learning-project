@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+}
+
+.upload-form {
+    margin-bottom: 20px;
+}
+
+.upload-form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.upload-form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-form button:hover {
+    background: #0056b3;
+}
+
+.gallery {
+    display: grid;
+    /* culmn in gallary */
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    gap: 20px;
+}
+
+.image-card {
+    position: relative;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-card img {
+    width: 100%;
+    display: block;
+}
+
+.delete-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #a71d2a;
+}
+.download-btn {
+    /* position: absolute; */
+    /* remove underline */
+    text-decoration: none;
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    background: #8bc6bf;
+    color: white;
+    border: none;
+    padding: 4px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.download-btn:hover {
+    background: #52dc70;
+}
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    .upload-form {
+        flex-direction: column;
+    }
+    .upload-form input[type="file"] {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+@media (max-width: 400px) {
+    .upload-form button {
+        width: 100%;
+    }
+    .delete-btn, .download-btn {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+}
