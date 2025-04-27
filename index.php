@@ -22,6 +22,7 @@
         <li><a href="projects/file_upload_system/index.php">17. File Upload System</a></li>
         <li><a href="projects/feedback_form/index.php">18. Feedback Form</a></li>
         <li><a href="projects/Session-Based-Counter/index.php">19. Session-Based Counter</a></li>
+        <li><a href="projects/E-card-generator/index.php">20. E-card Generator</a></li>
         <!-- Add more project links here -->
     </ul>
 </main>
