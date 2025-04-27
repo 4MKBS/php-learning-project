@@ -29,12 +29,34 @@
             width: 100%;
         }
     </style>
+    <script>
+        function validateForm() {
+            const name = document.forms["feedbackForm"]["name"].value.trim();
+            const email = document.forms["feedbackForm"]["email"].value.trim();
+            const message = document.forms["feedbackForm"]["message"].value.trim();
+        
+            if (name === "" || email === "" || message === "") {
+                alert("All fields are required.");
+                return false;
+            }
+        
+            const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+        
+            return true;
+        }
+        </script>
+        
 </head>
 <body>
 
 <div class="form-box">
     <h2>Feedback Form</h2>
-    <form action="feedback.php" method="POST">
+    <!-- <form action="feedback.php" method="POST"> -->
+    <form name="feedbackForm" action="feedback.php" method="POST" onsubmit="return validateForm();">
         <label for="name">Name:</label>
         <input type="text" name="name" required>
 
@@ -48,5 +70,7 @@
     </form>
 </div>
 
+<!-- login page -->
+ <a href="./viewFeedbacks.php">Feedbacks</a>
 </body>
 </html>

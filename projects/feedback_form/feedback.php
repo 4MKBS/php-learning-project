@@ -1,17 +1,37 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name    = htmlspecialchars($_POST["name"]);
-    $email   = htmlspecialchars($_POST["email"]);
-    $message = htmlspecialchars($_POST["message"]);
+// DB connection info
+$servername = "localhost";
+$username   = "root";
+$password   = "";
+$dbname     = "feedbackv1.0";
 
-    $entry = "Name: $name\nEmail: $email\nMessage: $message\n---\n";
+// Get POST data
+$name    = htmlspecialchars($_POST["name"]);
+$email   = htmlspecialchars($_POST["email"]);
+$message = htmlspecialchars($_POST["message"]);
 
-    // Save feedback to a file
-    file_put_contents("feedbacks.txt", $entry, FILE_APPEND);
+// Save to database
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-    echo "<h2>Thank you for your feedback, $name!</h2>";
-    echo "<a href='feedbackForm.html'>Go back</a>";
-} else {
-    echo "Invalid request.";
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
+
+$stmt = $conn->prepare("INSERT INTO feedbacks (name, email, message) VALUES (?, ?, ?)");
+$stmt->bind_param("sss", $name, $email, $message);
+$stmt->execute();
+$stmt->close();
+$conn->close();
+
+// Send email notification
+$to      = "04mkbs@gmail.com"; // Replace with your email address
+$subject = "New Feedback from $name";
+$body    = "Name: $name\nEmail: $email\nMessage:\n$message";
+$headers = "From: no-reply@yourdomain.com";
+
+// mail($to, $subject, $body, $headers);
+
+// Thank You Message
+echo "<h2>Thanks, $name! Your feedback has been submitted.</h2>";
+echo "<a href='feedbackForm.html'>Back to Form</a>";
 ?>
