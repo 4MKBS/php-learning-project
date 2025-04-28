@@ -24,6 +24,7 @@
         <li><a href="projects/Session-Based-Counter/index.php">19. Session-Based Counter</a></li>
         <li><a href="projects/E-card-generator/index.php">20. E-card Generator</a></li>
         <li><a href="projects/weather-app/index.php">21. Weather App</a></li>
+        <li><a href="projects/password-generator/index.php">22. Password Generator</a></li>
         <!-- Add more project links here -->
     </ul>
 </main>
