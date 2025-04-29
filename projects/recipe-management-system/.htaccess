@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Only apply rewrite if file/folder doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite URLs to router.php
+RewriteRule ^([a-zA-Z0-9_-]+)$ router.php?view=$1 [QSA,L]
