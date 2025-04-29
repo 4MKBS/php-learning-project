@@ -27,6 +27,7 @@
         <li><a href="projects/password-generator/index.php">22. Password Generator</a></li>
         <li><a href="projects/basic-shopping-cart/index.php">23. Basic Shopping Cart</a></li>
         <li><a href="projects/expenseTracker/index.php">24. Expense Tracker</a></li>
+        <li><a href="projects/recipe-management-system/index.php">25. Recipe Management System</a></li>
         <!-- Add more project links here -->
     </ul>
 </main>
